@@ -6,13 +6,7 @@ plugins {
 
 group = 'com.mysite'
 version = '0.0.1-SNAPSHOT'
-description = 'sbb project for Spring Boot'
-
-java {
-	toolchain {
-		languageVersion = JavaLanguageVersion.of(21)
-	}
-}
+sourceCompatibility = '20'
 
 repositories {
 	mavenCentral()
@@ -22,8 +16,6 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-    compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
 }
 
 tasks.named('test') {
